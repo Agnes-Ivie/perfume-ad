@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/acb1e9e524.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dektop and Mobile</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .first-div {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* margin: auto; */
+        /* padding: 2rem 0; */
+        /* padding: 10% 0; */
+        background-color: bisque;
+        /* height: 200%; */
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+/*  */
+      /* .image { */
+      /* padding-left: 25rem; */
+      /* height: 112.5%; */
+      /* position: relative;
+        bottom: 6%;
+        left: 2.9%; */
+      /* } */
+
+      .second-div {
+        padding: 1rem 0.5rem;
+        background-color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        align-items: center;
+      }
+
+      .second-div .text1 {
+        letter-spacing: 5px;
+        opacity: 0.7;
+        font-size: small;
+        padding: 0 1.5rem;
+      }
+
+      .second-div h3 {
+        padding: 0 1.5rem;
+      }
+
+      .second-div .text2 {
+        font-size: x-small;
+        line-height: 15px;
+        color: gray;
+        width: 100%;
+        padding: 0 1.5rem;
+      }
+
+      .second-div .text3 {
+        font-size: xx-large;
+        color: green;
+        font-weight: bolder;
+        font-family: "Times New Roman", Times, serif;
+        padding: 0.5rem 1.5rem;
+      }
+
+      .second-div span {
+        font-size: x-small;
+        color: gray;
+        padding-left: 1rem;
+      }
+
+      .second-div i {
+        margin-right: 10px;
+      }
+
+      .second-div button {
+        color: white;
+        padding: 0.5rem 3rem;
+        font-weight: bold;
+        word-spacing: 5px;
+        background-color: green;
+        border: green 1px solid;
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .first-div {
+          width: 100%;
+          background-color: antiquewhite;
+          display: block;
+          /* margin: 1rem 2rem; */
+        }
+
+        .container {
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        .image-div,
+        .second-div {
+          width: 100%;
+          text-align: center;
+        }
+
+        .image-div {
+          border-radius: 20px 20px 0 0;
+          overflow: hidden;
+        }
+
+        .image-div img {
+          width: 100%;
+          aspect-ratio: 1.3;
+          object-fit: cover;
+        }
+
+        /* .image {
+          width: 90%;
+          height: 250px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          padding: 0 0;
+        } */
+
+        /* .second-div {
+          width: 70%;
+          margin-left: 3.1rem;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          position: relative;
+          bottom: 22px;
+        } */
+
+        .second-div {
+          margin-top: -4px;
+        }
+
+        .second-div .text1 {
+          letter-spacing: 5px;
+          opacity: 0.7;
+          font-size: large;
+          padding: 0 1.5rem;
+        }
+        .second-div h3 {
+          padding: 0 1.5rem;
+          font-size: x-large;
+        }
+        .second-div .text2 {
+          font-size: medium;
+          line-height: 23px;
+          opacity: 0.7;
+          width: 100%;
+          padding: 0 1.5rem;
+        }
+        .second-div .text3 {
+          font-size: xx-large;
+          color: green;
+          font-weight: bolder;
+          font-family: "Times New Roman", Times, serif;
+          padding: 0.5rem 1.5rem;
+        }
+        .second-div span {
+          font-size: x-small;
+          color: gray;
+          padding-left: 1rem;
+        }
+        .second-div button {
+          color: white;
+          padding: 1rem 4rem;
+          font-weight: bold;
+          word-spacing: 5px;
+          background-color: green;
+          border: green 1px solid;
+          border-radius: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-div">
+      <div class="container">
+        <figure class="image-div">
+          <img
+            class="image"
+            src="data:image/jpeg;base64,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 "
+          />
+        </figure>
+        <div class="second-div">
+          <div class="text1">PERFUM</div>
+          <h3>
+            Gabrielle <br />
+            Essence Eau <br />
+            De Perfum
+          </h3>
+          <div class="text2">
+            The floral, solar and voluptuous. <br />
+            interpretation compaund by <br />oliver polge. perfumer creator
+            <br />
+            for the house of CHANEL.
+          </div>
+          <div class="text3">$149.99 <span>$169.99</span></div>
+          <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
